@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#content {
+    height: 100%;
+}
+
+img {
+    width: 500px;
+}
+
+.main {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0px 8px gray;
+}
