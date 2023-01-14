@@ -44,8 +44,6 @@ ol, ul {
 body {
     background-color: var(--background-colour);
     font-family: var(--font);
-    margin: 0;
-    padding: 0;
     width: 100vw;
     height: 100vh;
 }
@@ -89,12 +87,12 @@ img {
 
 .header-links {
     display: flex;
-    gap: 8px;
+    gap: 16px;
 }
 
 .header-links>button {
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: var(--font);
     font-weight: bold;
     color: var(--text-colour);
