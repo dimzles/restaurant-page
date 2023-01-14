@@ -54,18 +54,7 @@ body {
 
 img {
     width: 500px;
-}
-
-.main {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
-}
-
-.text { 
-    color: var(--text-colour);
-    font-family: var(--font);
+    border-radius: 8px;
 }
 
 .header {
@@ -102,4 +91,37 @@ img {
 .header-links>button:hover {
     background-color: var(--text-colour);
     color: var(--background-colour);
+    
+}
+
+.main {
+    display: flex;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    color: var(--text-colour);
+    margin-left: 12%;
+    gap: 32px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 32px;
+}
+
+.hero-header {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero-subtext {
+    font-size: 18px;
 }

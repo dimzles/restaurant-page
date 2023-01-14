@@ -1,5 +1,18 @@
 import chefPlating from './chef-plating.jpg';
 
+const createHeader = () => {
+    const header = document.createElement('div')
+    const headerText = document.createElement('p');
+
+    headerText.textContent = "Restaurant Name";
+    headerText.classList.add('header-text');
+    header.classList.add('header');
+    header.appendChild(headerText);
+    header.appendChild(createHeaderLinks())
+
+    return header;
+}
+
 const createHeaderLinks = () => {
     const headerLinks = document.createElement('div');
     headerLinks.classList.add('header-links');
@@ -27,31 +40,33 @@ const createHeaderLinks = () => {
     return headerLinks;
 }
 
-const createHeader = () => {
-    const header = document.createElement('div')
-    const headerText = document.createElement('p');
-
-    headerText.textContent = "Restaurant Name";
-    headerText.classList.add('header-text');
-    header.classList.add('header');
-    header.appendChild(headerText);
-    header.appendChild(createHeaderLinks())
-
-    return header;
-}
 
 const createMain = () => {
     const main = document.createElement('div');
-    const mainText = document.createElement('p');
+    const mainHero = document.createElement('div');
+    const textContainer = document.createElement('div');
+    const heroHeader = document.createElement('h3');
+    const heroSubtext = document.createElement('h4');
     const img = document.createElement('img');
-
+    
     img.src = chefPlating;
-    main.classList.add('main');
-    mainText.classList.add('text');
-    mainText.textContent = 'Very nice food';
 
-    main.appendChild(img);
-    main.appendChild(mainText);
+    main.classList.add('main');
+    mainHero.classList.add('hero');
+    textContainer.classList.add('hero-container');
+    heroHeader.classList.add('hero-header');
+    heroSubtext.classList.add('hero-subtext');
+
+    heroHeader.textContent = 'Fine Dining Excellence';
+    heroSubtext.textContent = 'Some very nice copy about how lovely this restaurant is. Culpa eiusmod fugiat incididunt ipsum eiusmod. Consectetur ipsum ipsum culpa laborum cillum adipisicing aliquip laborum esse nulla aliqua. Deserunt nostrud exercitation culpa reprehenderit sit elit proident et sit officia. Voluptate aliqua Lorem laboris pariatur sunt duis labore duis pariatur reprehenderit sit ad elit. Sit ad tempor exercitation ullamco ut irure excepteur voluptate voluptate proident eu. Esse dolore reprehenderit sint commodo ullamco aliqua ullamco do in sunt esse. Cillum non Lorem officia velit.';
+
+    textContainer.appendChild(heroHeader);
+    textContainer.appendChild(heroSubtext);
+
+    mainHero.appendChild(img)
+    mainHero.appendChild(textContainer);
+
+    main.appendChild(mainHero);
 
     return main;
 }
