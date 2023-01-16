@@ -8,8 +8,24 @@ function addEvents() {
     buttons.forEach((btn) => {
         btn.addEventListener('click', () => {
             switch (btn.id) {
+                case 'home':
+                    console.log('home')
+                    createPage()
+                    addEvents()
+                    break;
                 case 'about':
-                    createAboutPage();
+                    console.log('about')
+                    createAboutPage()
+                    addEvents()
+                    break;
+                case 'menu':
+                    console.log('menu');
+                    break;
+                case 'contact':
+                    console.log('contact');
+                    break;
+                default:
+                    break;
             }
         })
     })

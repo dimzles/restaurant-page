@@ -74,8 +74,12 @@ const createMain = () => {
 const createPage = () => {
     const content = document.getElementById('content');
 
+    content.textContent = '';
+
     content.appendChild(createHeader());
     content.appendChild(createMain());
+
+    return content;
 }
 
 export { createPage, createHeader };
