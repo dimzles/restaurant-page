@@ -53,6 +53,7 @@ const createMain = () => {
 
     main.classList.add('main');
     mainHero.classList.add('hero');
+    img.classList.add('main-img');
     textContainer.classList.add('hero-container');
     heroHeader.classList.add('hero-header');
     heroSubtext.classList.add('hero-subtext');
