@@ -78,4 +78,4 @@ const createPage = () => {
     content.appendChild(createMain());
 }
 
-export default createPage;
+export { createPage, createHeader };
