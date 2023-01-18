@@ -72,7 +72,7 @@ const createMain = () => {
     return main;
 }
 
-const createPage = () => {
+const createHomePage = () => {
     const content = document.getElementById('content');
 
     content.textContent = '';
@@ -83,4 +83,4 @@ const createPage = () => {
     return content;
 }
 
-export { createPage, createHeader };
+export { createHomePage, createHeader };

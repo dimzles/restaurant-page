@@ -1,7 +1,8 @@
 import './style.css';
-import { createPage } from './initialPage';
+import { createHomePage } from './initialPage';
 import { createAboutPage } from './aboutPage';
 import { createMenuPage } from './menuPage';
+import { createContactPage } from './contactPage';
 
 function addEvents() {
     const buttons = document.querySelectorAll('button');
@@ -10,7 +11,7 @@ function addEvents() {
         btn.addEventListener('click', () => {
             switch (btn.id) {
                 case 'home':
-                    createPage()
+                    createHomePage()
                     addEvents()
                     break;
                 case 'about':
@@ -22,7 +23,8 @@ function addEvents() {
                     addEvents();
                     break;
                 case 'contact':
-                    console.log('contact');
+                    createContactPage();
+                    addEvents();
                     break;
                 default:
                     break;
@@ -32,5 +34,5 @@ function addEvents() {
 }
 
 
-createPage();
+createHomePage();
 addEvents();
