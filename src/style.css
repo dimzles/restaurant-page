@@ -39,6 +39,7 @@ ol, ul {
     --text-colour: #F5F5F5;
     --header-font: 'Dancing Script', cursive, 'Roboto', sans-serif;
     --font: 'Yantramanav', 'Roboto', sans-serif;
+    --main-height: calc(100vh - 100px);
 }
 
 body {
@@ -96,7 +97,7 @@ body {
 
 .main {
     display: flex;
-    height: calc(100vh - 100px);
+    height: var(--main-height);
     justify-content: center;
     align-items: center;
 }
@@ -130,7 +131,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: calc(100vh - 100px)
+    height: var(--main-height);
 }
 
 .about-img {
@@ -176,4 +177,60 @@ body {
 .ab-txt-container>p {
     color: white;
     font-size: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--main-height);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    height: 70%;
+    width: 80%;
+    gap: 8px;
+}
+
+.menu-card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid white;
+    object-fit: cover;
+}
+
+.menu-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.menu-text-container {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text {
+    color:var(--text-colour);
+    font-size: 32px;
+}
+
+#card-3 {
+    object-position: bottom;
+}
+
+#card-5 {
+    object-position: 50% 80%;
 }

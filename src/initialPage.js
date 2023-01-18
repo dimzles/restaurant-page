@@ -1,4 +1,4 @@
-import chefPlating from './chef-plating.jpg';
+import chefPlating from './images/chef-plating.jpg';
 
 const createHeader = () => {
     const header = document.createElement('div')

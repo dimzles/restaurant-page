@@ -1,5 +1,5 @@
 import { createHeader } from "./initialPage";
-import aboutImg from './about-img.jpg';
+import aboutImg from './images/about-img.jpg';
 
 const createImageContainer = () => {
     const img = document.createElement('img');
